@@ -18,5 +18,6 @@ struct InfoItunes: Decodable {
     let artistName: String // 회사 이름
     let genres: [String] // 앱 장르
     let trackName: String // 앱 이름
+    let version: String
 }
 

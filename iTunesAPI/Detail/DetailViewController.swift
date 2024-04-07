@@ -122,7 +122,7 @@ final class DetailViewController: BaseViewController {
         appIcon.kf.setImage(with: URL(string: item.artworkUrl100))
         iconName.text = item.trackName
         company.text = item.artistName
-//        versionLabel.text = "버전 \(item.)"
+        versionLabel.text = "버전 \(item.version)"
     }
     
     //    override func bind() {
