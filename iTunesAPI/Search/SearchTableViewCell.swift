@@ -35,8 +35,6 @@ class SearchTableViewCell: BaseTableViewCell {
             $0.leading.equalTo(20)
             $0.size.equalTo(60)
         }
-        
-        
     }
     
     //    override func configureView() {

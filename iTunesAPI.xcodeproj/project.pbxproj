@@ -21,6 +21,10 @@
 		C266CAD82BC2396300908A4D /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = C266CAD72BC2396300908A4D /* SnapKit-Dynamic */; };
 		C266CADB2BC2425700908A4D /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = C266CADA2BC2425700908A4D /* RxCocoa */; };
 		C266CADD2BC2425700908A4D /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C266CADC2BC2425700908A4D /* RxSwift */; };
+		C266CAE02BC247CD00908A4D /* iTunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266CADF2BC247CD00908A4D /* iTunesAPI.swift */; };
+		C266CAE22BC24D3D00908A4D /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266CAE12BC24D3D00908A4D /* APIManager.swift */; };
+		C266CAE52BC24D8700908A4D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C266CAE42BC24D8700908A4D /* Alamofire */; };
+		C266CAE72BC24D8700908A4D /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = C266CAE62BC24D8700908A4D /* AlamofireDynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,8 @@
 		C266CACE2BC2308600908A4D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C266CAD02BC231AC00908A4D /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		C266CAD22BC231B200908A4D /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		C266CADF2BC247CD00908A4D /* iTunesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesAPI.swift; sourceTree = "<group>"; };
+		C266CAE12BC24D3D00908A4D /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C266CAE52BC24D8700908A4D /* Alamofire in Frameworks */,
+				C266CAE72BC24D8700908A4D /* AlamofireDynamic in Frameworks */,
 				C266CADB2BC2425700908A4D /* RxCocoa in Frameworks */,
 				C266CAD62BC2396300908A4D /* SnapKit in Frameworks */,
 				C266CADD2BC2425700908A4D /* RxSwift in Frameworks */,
@@ -72,6 +80,7 @@
 		C266CAB52BC22F9D00908A4D /* iTunesAPI */ = {
 			isa = PBXGroup;
 			children = (
+				C266CADE2BC246C300908A4D /* Network */,
 				C266CACD2BC2307600908A4D /* Base */,
 				C266CACA2BC2306200908A4D /* Search */,
 				C266CAB62BC22F9D00908A4D /* AppDelegate.swift */,
@@ -103,6 +112,15 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		C266CADE2BC246C300908A4D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C266CADF2BC247CD00908A4D /* iTunesAPI.swift */,
+				C266CAE12BC24D3D00908A4D /* APIManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -124,6 +142,8 @@
 				C266CAD72BC2396300908A4D /* SnapKit-Dynamic */,
 				C266CADA2BC2425700908A4D /* RxCocoa */,
 				C266CADC2BC2425700908A4D /* RxSwift */,
+				C266CAE42BC24D8700908A4D /* Alamofire */,
+				C266CAE62BC24D8700908A4D /* AlamofireDynamic */,
 			);
 			productName = iTunesAPI;
 			productReference = C266CAB32BC22F9D00908A4D /* iTunesAPI.app */;
@@ -156,6 +176,7 @@
 			packageReferences = (
 				C266CAD42BC2396300908A4D /* XCRemoteSwiftPackageReference "SnapKit" */,
 				C266CAD92BC2425700908A4D /* XCRemoteSwiftPackageReference "RxSwift" */,
+				C266CAE32BC24D8700908A4D /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = C266CAB42BC22F9D00908A4D /* Products */;
 			projectDirPath = "";
@@ -187,7 +208,9 @@
 				C266CACF2BC2308600908A4D /* BaseViewController.swift in Sources */,
 				C266CABB2BC22F9D00908A4D /* ViewController.swift in Sources */,
 				C266CAB72BC22F9D00908A4D /* AppDelegate.swift in Sources */,
+				C266CAE22BC24D3D00908A4D /* APIManager.swift in Sources */,
 				C266CAD12BC231AC00908A4D /* SearchTableViewCell.swift in Sources */,
+				C266CAE02BC247CD00908A4D /* iTunesAPI.swift in Sources */,
 				C266CAD32BC231B200908A4D /* BaseTableViewCell.swift in Sources */,
 				C266CACC2BC2306F00908A4D /* SearchViewController.swift in Sources */,
 				C266CAB92BC22F9D00908A4D /* SceneDelegate.swift in Sources */,
@@ -431,6 +454,14 @@
 				minimumVersion = 6.6.0;
 			};
 		};
+		C266CAE32BC24D8700908A4D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -453,6 +484,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C266CAD92BC2425700908A4D /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		C266CAE42BC24D8700908A4D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C266CAE32BC24D8700908A4D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		C266CAE62BC24D8700908A4D /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C266CAE32BC24D8700908A4D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

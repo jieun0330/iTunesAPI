@@ -7,6 +7,8 @@
 
 import UIKit
 import SnapKit
+import RxSwift
+import RxCocoa
 
 final class SearchViewController: BaseViewController {
     
@@ -21,7 +23,6 @@ final class SearchViewController: BaseViewController {
         let tableView = UITableView()
         tableView.register(SearchTableViewCell.self, forCellReuseIdentifier: SearchTableViewCell.identifier)
         tableView.backgroundColor = .orange
-        tableView.rowHeight = 250
         return tableView
     }()
     
@@ -47,7 +48,7 @@ final class SearchViewController: BaseViewController {
         navigationItem.titleView = searchBar
     }
     
-//        override func bind() {
-//            tableView.
-//        }
+    override func bind() {
+        
+    }
 }
