@@ -27,7 +27,8 @@ final class SearchViewController: BaseViewController {
         let tableView = UITableView()
         tableView.register(SearchTableViewCell.self, forCellReuseIdentifier: SearchTableViewCell.identifier)
         tableView.backgroundColor = .white
-        tableView.rowHeight = 320
+        tableView.rowHeight = 340
+        tableView.separatorStyle = .none
         return tableView
     }()
     
@@ -67,6 +68,13 @@ final class SearchViewController: BaseViewController {
                 cell.ratingsNum.text = String(element.averageUserRating)
                 cell.company.text = element.artistName
                 cell.theme.text = element.genres.first
+                
+                let screenShotImages = BehaviorSubject(value: element.screenshotUrls.prefix(3))
+                screenShotImages
+                    .bind(to: cell.collectionView.rx.items(cellIdentifier: ScreenShotsCollectionViewCell.identifier, cellType: ScreenShotsCollectionViewCell.self)) { item, element, cell in
+                        cell.screenShots.kf.setImage(with: URL(string: element))
+                    }
+                    .disposed(by: cell.disposeBag)
             }
                                          .disposed(by: disposeBag)
     }

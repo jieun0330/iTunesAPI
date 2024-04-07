@@ -7,8 +7,12 @@
 
 import UIKit
 import SnapKit
+import RxSwift
+import RxCocoa
 
 class SearchTableViewCell: BaseTableViewCell {
+    
+    let disposeBag = DisposeBag()
     
     let appIcon: UIImageView = {
         let image = UIImageView()
@@ -63,11 +67,13 @@ class SearchTableViewCell: BaseTableViewCell {
     }()
     
     let collectionView: UICollectionView = {
-        let collectionView = UICollectionView()
-        collectionView.backgroundColor = .brown
+        let collectionView = UICollectionView(frame: .zero,
+                                              collectionViewLayout: collectionViewLayout())
+        collectionView.register(ScreenShotsCollectionViewCell.self, forCellWithReuseIdentifier: ScreenShotsCollectionViewCell.identifier)
+        collectionView.isScrollEnabled = false
         return collectionView
     }()
-            
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super .init(style: style, reuseIdentifier: reuseIdentifier)
     }
@@ -123,13 +129,23 @@ class SearchTableViewCell: BaseTableViewCell {
         collectionView.snp.makeConstraints {
             $0.top.equalTo(ratingsStar.snp.bottom).offset(12)
             $0.horizontalEdges.equalToSuperview().inset(20)
-            $0.height.equalTo(200)
+            $0.height.equalTo(220)
         }
     }
     
     //    override func configureView() {
     //        <#code#>
     //    }
+    
+    static func collectionViewLayout() -> UICollectionViewFlowLayout {
+        let layout = UICollectionViewFlowLayout()
+        let spacing: CGFloat = 10
+        let width = UIScreen.main.bounds.width - (spacing * 2)
+        layout.itemSize = CGSize(width: width / 3.35, height: width / 1.85)
+        layout.scrollDirection = .horizontal
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        return layout
+    }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

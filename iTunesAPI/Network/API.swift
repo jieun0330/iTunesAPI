@@ -12,6 +12,7 @@ struct MainItunes: Decodable {
 }
 
 struct InfoItunes: Decodable {
+    let screenshotUrls: [String] // 스크린샷 이미지
     let artworkUrl100: String // 로고
     let averageUserRating: Double // 평점
     let artistName: String // 회사 이름
