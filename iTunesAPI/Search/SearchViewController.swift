@@ -12,6 +12,9 @@ import RxCocoa
 
 final class SearchViewController: BaseViewController {
     
+    private let viewModel = SearchViewModel()
+    private let disposeBag = DisposeBag()
+    
     private let searchBar = {
         let search = UISearchBar()
         search.placeholder = "게임, 앱, 스토리 등"
@@ -49,6 +52,16 @@ final class SearchViewController: BaseViewController {
     }
     
     override func bind() {
+        let input = SearchViewModel.Input(searchButtonTap: searchBar.rx.searchButtonClicked,
+                                          searchText: searchBar.rx.text.orEmpty)
+
+        let output = viewModel.transform(input: input)
         
+        output.itunesInfo
+            .bind(to: tableView.rx.items(cellIdentifier: SearchTableViewCell.identifier,
+                                         cellType: SearchTableViewCell.self)) { row, element, cell in
+
+            }
+                                         .disposed(by: disposeBag)
     }
 }

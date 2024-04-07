@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct APIResults: Decodable {
-    let apiResults: [APIInfo]
+struct MainItunes: Decodable {
+    let apiResults: [InfoItunes]
 }
 
-struct APIInfo: Decodable {
+struct InfoItunes: Decodable {
     let artworkUrl100: String // 로고
     let artistName: String // 회사 이름
     let trackName: String // 앱 이름

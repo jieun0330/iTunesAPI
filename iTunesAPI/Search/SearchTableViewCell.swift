@@ -10,7 +10,7 @@ import SnapKit
 
 class SearchTableViewCell: BaseTableViewCell {
     
-    private let appIcon: UIImageView = {
+    let appIcon: UIImageView = {
         let image = UIImageView()
         image.image = UIImage(systemName: "star")
         image.contentMode = .scaleAspectFit

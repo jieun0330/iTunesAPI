@@ -21,10 +21,11 @@
 		C266CAD82BC2396300908A4D /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = C266CAD72BC2396300908A4D /* SnapKit-Dynamic */; };
 		C266CADB2BC2425700908A4D /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = C266CADA2BC2425700908A4D /* RxCocoa */; };
 		C266CADD2BC2425700908A4D /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C266CADC2BC2425700908A4D /* RxSwift */; };
-		C266CAE02BC247CD00908A4D /* iTunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266CADF2BC247CD00908A4D /* iTunesAPI.swift */; };
+		C266CAE02BC247CD00908A4D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266CADF2BC247CD00908A4D /* API.swift */; };
 		C266CAE22BC24D3D00908A4D /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266CAE12BC24D3D00908A4D /* APIManager.swift */; };
 		C266CAE52BC24D8700908A4D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C266CAE42BC24D8700908A4D /* Alamofire */; };
 		C266CAE72BC24D8700908A4D /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = C266CAE62BC24D8700908A4D /* AlamofireDynamic */; };
+		C266CAE92BC2500600908A4D /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266CAE82BC2500600908A4D /* SearchViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +41,9 @@
 		C266CACE2BC2308600908A4D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C266CAD02BC231AC00908A4D /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		C266CAD22BC231B200908A4D /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
-		C266CADF2BC247CD00908A4D /* iTunesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesAPI.swift; sourceTree = "<group>"; };
+		C266CADF2BC247CD00908A4D /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		C266CAE12BC24D3D00908A4D /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		C266CAE82BC2500600908A4D /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				C266CACB2BC2306F00908A4D /* SearchViewController.swift */,
+				C266CAE82BC2500600908A4D /* SearchViewModel.swift */,
 				C266CAD02BC231AC00908A4D /* SearchTableViewCell.swift */,
 			);
 			path = Search;
@@ -115,7 +118,7 @@
 		C266CADE2BC246C300908A4D /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				C266CADF2BC247CD00908A4D /* iTunesAPI.swift */,
+				C266CADF2BC247CD00908A4D /* API.swift */,
 				C266CAE12BC24D3D00908A4D /* APIManager.swift */,
 			);
 			path = Network;
@@ -210,7 +213,8 @@
 				C266CAB72BC22F9D00908A4D /* AppDelegate.swift in Sources */,
 				C266CAE22BC24D3D00908A4D /* APIManager.swift in Sources */,
 				C266CAD12BC231AC00908A4D /* SearchTableViewCell.swift in Sources */,
-				C266CAE02BC247CD00908A4D /* iTunesAPI.swift in Sources */,
+				C266CAE02BC247CD00908A4D /* API.swift in Sources */,
+				C266CAE92BC2500600908A4D /* SearchViewModel.swift in Sources */,
 				C266CAD32BC231B200908A4D /* BaseTableViewCell.swift in Sources */,
 				C266CACC2BC2306F00908A4D /* SearchViewController.swift in Sources */,
 				C266CAB92BC22F9D00908A4D /* SceneDelegate.swift in Sources */,
