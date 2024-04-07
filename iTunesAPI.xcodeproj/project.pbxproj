@@ -15,6 +15,8 @@
 		C266CAC32BC22F9F00908A4D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C266CAC22BC22F9F00908A4D /* Base */; };
 		C266CACC2BC2306F00908A4D /* SerachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266CACB2BC2306F00908A4D /* SerachViewController.swift */; };
 		C266CACF2BC2308600908A4D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266CACE2BC2308600908A4D /* BaseViewController.swift */; };
+		C266CAD12BC231AC00908A4D /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266CAD02BC231AC00908A4D /* SearchTableViewCell.swift */; };
+		C266CAD32BC231B200908A4D /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266CAD22BC231B200908A4D /* BaseTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		C266CAC42BC22F9F00908A4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C266CACB2BC2306F00908A4D /* SerachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerachViewController.swift; sourceTree = "<group>"; };
 		C266CACE2BC2308600908A4D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		C266CAD02BC231AC00908A4D /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		C266CAD22BC231B200908A4D /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				C266CACB2BC2306F00908A4D /* SerachViewController.swift */,
+				C266CAD02BC231AC00908A4D /* SearchTableViewCell.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -85,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				C266CACE2BC2308600908A4D /* BaseViewController.swift */,
+				C266CAD22BC231B200908A4D /* BaseTableViewCell.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -163,6 +169,8 @@
 				C266CACF2BC2308600908A4D /* BaseViewController.swift in Sources */,
 				C266CABB2BC22F9D00908A4D /* ViewController.swift in Sources */,
 				C266CAB72BC22F9D00908A4D /* AppDelegate.swift in Sources */,
+				C266CAD12BC231AC00908A4D /* SearchTableViewCell.swift in Sources */,
+				C266CAD32BC231B200908A4D /* BaseTableViewCell.swift in Sources */,
 				C266CACC2BC2306F00908A4D /* SerachViewController.swift in Sources */,
 				C266CAB92BC22F9D00908A4D /* SceneDelegate.swift in Sources */,
 			);

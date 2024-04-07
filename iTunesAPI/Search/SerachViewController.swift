@@ -7,23 +7,33 @@
 
 import UIKit
 
-class SerachViewController: UIViewController {
+final class SerachViewController: BaseViewController {
+    
+        private let searchBar = {
+            let view = UISearchBar()
+            view.placeholder = "게임, 앱, 스토리 등"
+            view.showsCancelButton = true
+            return view
+        }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func configureHierarchy() {
+        <#code#>
     }
-    */
-
+    
+    override func configureConstraints() {
+        <#code#>
+    }
+    
+    override func configureView() {
+        <#code#>
+    }
+    
+    override func bind() {
+        <#code#>
+    }
 }
