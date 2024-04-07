@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 final class SearchViewController: BaseViewController {
     
@@ -18,7 +19,7 @@ final class SearchViewController: BaseViewController {
     
     private let tableView: UITableView = {
         let tableView = UITableView()
-        //        tableView.register(SearchTableViewCell.self, forCellReuseIdentifier: SearchTableViewCell.identifier)
+        tableView.register(SearchTableViewCell.self, forCellReuseIdentifier: SearchTableViewCell.identifier)
         tableView.backgroundColor = .orange
         tableView.rowHeight = 250
         return tableView
@@ -36,14 +37,17 @@ final class SearchViewController: BaseViewController {
     }
     
     override func configureConstraints() {
-        <#code#>
+        tableView.snp.makeConstraints {
+            $0.top.equalTo(view.safeAreaLayoutGuide)
+            $0.horizontalEdges.bottom.equalTo(view.safeAreaLayoutGuide)
+        }
     }
     
     override func configureView() {
-        <#code#>
+        navigationItem.titleView = searchBar
     }
     
-    override func bind() {
-        <#code#>
-    }
+//        override func bind() {
+//            tableView.
+//        }
 }
