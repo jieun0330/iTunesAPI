@@ -13,6 +13,8 @@
 		C266CABE2BC22F9D00908A4D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C266CABD2BC22F9D00908A4D /* Base */; };
 		C266CAC02BC22F9F00908A4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C266CABF2BC22F9F00908A4D /* Assets.xcassets */; };
 		C266CAC32BC22F9F00908A4D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C266CAC22BC22F9F00908A4D /* Base */; };
+		C266CACC2BC2306F00908A4D /* SerachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266CACB2BC2306F00908A4D /* SerachViewController.swift */; };
+		C266CACF2BC2308600908A4D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266CACE2BC2308600908A4D /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		C266CABF2BC22F9F00908A4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C266CAC22BC22F9F00908A4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C266CAC42BC22F9F00908A4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C266CACB2BC2306F00908A4D /* SerachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerachViewController.swift; sourceTree = "<group>"; };
+		C266CACE2BC2308600908A4D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		C266CAB52BC22F9D00908A4D /* iTunesAPI */ = {
 			isa = PBXGroup;
 			children = (
+				C266CACD2BC2307600908A4D /* Base */,
+				C266CACA2BC2306200908A4D /* Search */,
 				C266CAB62BC22F9D00908A4D /* AppDelegate.swift */,
 				C266CAB82BC22F9D00908A4D /* SceneDelegate.swift */,
 				C266CABA2BC22F9D00908A4D /* ViewController.swift */,
@@ -65,6 +71,22 @@
 				C266CAC42BC22F9F00908A4D /* Info.plist */,
 			);
 			path = iTunesAPI;
+			sourceTree = "<group>";
+		};
+		C266CACA2BC2306200908A4D /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				C266CACB2BC2306F00908A4D /* SerachViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		C266CACD2BC2307600908A4D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C266CACE2BC2308600908A4D /* BaseViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C266CACF2BC2308600908A4D /* BaseViewController.swift in Sources */,
 				C266CABB2BC22F9D00908A4D /* ViewController.swift in Sources */,
 				C266CAB72BC22F9D00908A4D /* AppDelegate.swift in Sources */,
+				C266CACC2BC2306F00908A4D /* SerachViewController.swift in Sources */,
 				C266CAB92BC22F9D00908A4D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
