@@ -49,6 +49,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         searchView.tabBarItem = UITabBarItem(title: "검색",
                                              image: UIImage(systemName: "magnifyingglass"),
                                              selectedImage: UIImage(systemName: "magnifyingglass"))
+        
+        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

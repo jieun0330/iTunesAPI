@@ -29,19 +29,21 @@ final class SearchViewController: BaseViewController {
         
     }
     
-    //    override func configureHierarchy() {
-    //        <#code#>
-    //    }
-    //
-    //    override func configureConstraints() {
-    //        <#code#>
-    //    }
-    //
-    //    override func configureView() {
-    //        <#code#>
-    //    }
-    //
-    //    override func bind() {
-    //        <#code#>
-    //    }
+    override func configureHierarchy() {
+        [searchBar, tableView].forEach {
+            view.addSubview($0)
+        }
+    }
+    
+    override func configureConstraints() {
+        <#code#>
+    }
+    
+    override func configureView() {
+        <#code#>
+    }
+    
+    override func bind() {
+        <#code#>
+    }
 }
