@@ -147,6 +147,13 @@ class SearchTableViewCell: BaseTableViewCell {
         return layout
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        collectionView.delegate = nil
+        collectionView.dataSource = nil
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
