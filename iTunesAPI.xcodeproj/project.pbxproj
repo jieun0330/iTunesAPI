@@ -28,6 +28,7 @@
 		C266CAE92BC2500600908A4D /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266CAE82BC2500600908A4D /* SearchViewModel.swift */; };
 		C266CAF02BC26D8D00908A4D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C266CAEF2BC26D8D00908A4D /* Kingfisher */; };
 		C266CB122BC2B2A000908A4D /* ScreenShotsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266CB112BC2B2A000908A4D /* ScreenShotsCollectionViewCell.swift */; };
+		C266CB142BC2B2C700908A4D /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266CB132BC2B2C700908A4D /* BaseCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		C266CAE12BC24D3D00908A4D /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		C266CAE82BC2500600908A4D /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		C266CB112BC2B2A000908A4D /* ScreenShotsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenShotsCollectionViewCell.swift; sourceTree = "<group>"; };
+		C266CB132BC2B2C700908A4D /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			children = (
 				C266CACE2BC2308600908A4D /* BaseViewController.swift */,
 				C266CAD22BC231B200908A4D /* BaseTableViewCell.swift */,
+				C266CB132BC2B2C700908A4D /* BaseCollectionViewCell.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				C266CAB72BC22F9D00908A4D /* AppDelegate.swift in Sources */,
 				C266CAE22BC24D3D00908A4D /* APIManager.swift in Sources */,
 				C266CAD12BC231AC00908A4D /* SearchTableViewCell.swift in Sources */,
+				C266CB142BC2B2C700908A4D /* BaseCollectionViewCell.swift in Sources */,
 				C266CAE02BC247CD00908A4D /* API.swift in Sources */,
 				C266CAE92BC2500600908A4D /* SearchViewModel.swift in Sources */,
 				C266CAD32BC231B200908A4D /* BaseTableViewCell.swift in Sources */,
