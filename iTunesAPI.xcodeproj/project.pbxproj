@@ -29,6 +29,7 @@
 		C266CAF02BC26D8D00908A4D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C266CAEF2BC26D8D00908A4D /* Kingfisher */; };
 		C266CB122BC2B2A000908A4D /* ScreenShotsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266CB112BC2B2A000908A4D /* ScreenShotsCollectionViewCell.swift */; };
 		C266CB142BC2B2C700908A4D /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266CB132BC2B2C700908A4D /* BaseCollectionViewCell.swift */; };
+		C266CB172BC2E7AF00908A4D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266CB162BC2E7AF00908A4D /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		C266CAE82BC2500600908A4D /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		C266CB112BC2B2A000908A4D /* ScreenShotsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenShotsCollectionViewCell.swift; sourceTree = "<group>"; };
 		C266CB132BC2B2C700908A4D /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		C266CB162BC2E7AF00908A4D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		C266CAB52BC22F9D00908A4D /* iTunesAPI */ = {
 			isa = PBXGroup;
 			children = (
+				C266CB152BC2E7A200908A4D /* Detail */,
 				C266CADE2BC246C300908A4D /* Network */,
 				C266CACD2BC2307600908A4D /* Base */,
 				C266CACA2BC2306200908A4D /* Search */,
@@ -130,6 +133,14 @@
 				C266CAE12BC24D3D00908A4D /* APIManager.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		C266CB152BC2E7A200908A4D /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				C266CB162BC2E7AF00908A4D /* DetailViewController.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C266CB172BC2E7AF00908A4D /* DetailViewController.swift in Sources */,
 				C266CACF2BC2308600908A4D /* BaseViewController.swift in Sources */,
 				C266CABB2BC22F9D00908A4D /* ViewController.swift in Sources */,
 				C266CAB72BC22F9D00908A4D /* AppDelegate.swift in Sources */,

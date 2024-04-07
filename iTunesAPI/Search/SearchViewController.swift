@@ -77,5 +77,13 @@ final class SearchViewController: BaseViewController {
                     .disposed(by: cell.disposeBag)
             }
                                          .disposed(by: disposeBag)
+        
+        tableView.rx.modelSelected(InfoItunes.self)
+            .bind(with: self) { owner, value in
+                let vc = DetailViewController()
+                vc.item = value
+                owner.navigationController?.pushViewController(vc, animated: true)
+            }
+            .disposed(by: disposeBag)
     }
 }

@@ -24,11 +24,9 @@ final class APIManager {
                 .responseDecodable(of: MainItunes.self) { response in
                     switch response.result {
                     case .success(let success):
-                        print(success)
                         observer.onNext(success.results)
                         observer.onCompleted()
                     case .failure(let failure):
-                        dump(failure)
                         observer.onError(failure)
                     }
                 }
