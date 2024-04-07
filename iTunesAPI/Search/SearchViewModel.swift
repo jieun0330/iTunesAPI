@@ -25,27 +25,19 @@ class SearchViewModel {
     func transform(input: Input) -> Output {
         
         let iTunesList = PublishSubject<[InfoItunes]>()
-        
+                
         input.searchButtonTap
             .throttle(.seconds(1),
                       scheduler: MainScheduler.instance)
             .withLatestFrom(input.searchText)
+            .distinctUntilChanged()
             .flatMap {
                 APIManager.shared.callRequest(query: $0)
             }
             .subscribe(with: self) { owner, value in
-                // value: MainItune
-                let data = value.apiResults
-                iTunesList.onNext(data)
-            } onError: { _, _ in
-                print("error")
-            } onCompleted: { _ in
-                print("completed")
-            } onDisposed: { _ in
-                print("disposed")
+                iTunesList.onNext(value)
             }
             .disposed(by: disposeBag)
-
         
         return Output(itunesInfo: iTunesList)
     }

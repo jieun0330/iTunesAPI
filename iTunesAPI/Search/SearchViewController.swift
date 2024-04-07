@@ -9,6 +9,7 @@ import UIKit
 import SnapKit
 import RxSwift
 import RxCocoa
+import Kingfisher
 
 final class SearchViewController: BaseViewController {
     
@@ -25,7 +26,8 @@ final class SearchViewController: BaseViewController {
     private let tableView: UITableView = {
         let tableView = UITableView()
         tableView.register(SearchTableViewCell.self, forCellReuseIdentifier: SearchTableViewCell.identifier)
-        tableView.backgroundColor = .orange
+        tableView.backgroundColor = .white
+        tableView.rowHeight = 320
         return tableView
     }()
     
@@ -54,13 +56,17 @@ final class SearchViewController: BaseViewController {
     override func bind() {
         let input = SearchViewModel.Input(searchButtonTap: searchBar.rx.searchButtonClicked,
                                           searchText: searchBar.rx.text.orEmpty)
-
+        
         let output = viewModel.transform(input: input)
         
         output.itunesInfo
             .bind(to: tableView.rx.items(cellIdentifier: SearchTableViewCell.identifier,
                                          cellType: SearchTableViewCell.self)) { row, element, cell in
-
+                cell.appIcon.kf.setImage(with: URL(string: element.artworkUrl100))
+                cell.appName.text = element.trackName
+                cell.ratingsNum.text = String(element.averageUserRating)
+                cell.company.text = element.artistName
+                cell.theme.text = element.genres.first
             }
                                          .disposed(by: disposeBag)
     }

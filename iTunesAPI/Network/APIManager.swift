@@ -13,22 +13,26 @@ import RxCocoa
 final class APIManager {
     static let shared = APIManager()
     
-    func callRequest(query: String) -> Observable<MainItunes> {
+    func callRequest(query: String) -> Observable<[InfoItunes]> {
         
-        return Observable<MainItunes>.create { observer in
+        return Observable<[InfoItunes]>.create { observer in
             
-            let url = "https://itunes.apple.com/search?term=\(query)&country=KR&callback=wsSearchCB&media=software"
+            let url = "https://itunes.apple.com/search?term=\(query)&country=KR&&entity=software"
             
             AF
                 .request(url)
-                .responseDecodable(of: InfoItunes.self) { response in
+                .responseDecodable(of: MainItunes.self) { response in
                     switch response.result {
                     case .success(let success):
                         print(success)
+                        observer.onNext(success.results)
+                        observer.onCompleted()
                     case .failure(let failure):
-                        print(failure)
+                        dump(failure)
+                        observer.onError(failure)
                     }
                 }
+            return Disposables.create()
         }
     }
 }

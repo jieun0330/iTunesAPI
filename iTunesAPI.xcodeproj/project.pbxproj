@@ -27,6 +27,7 @@
 		C266CAE72BC24D8700908A4D /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = C266CAE62BC24D8700908A4D /* AlamofireDynamic */; };
 		C266CAE92BC2500600908A4D /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266CAE82BC2500600908A4D /* SearchViewModel.swift */; };
 		C266CAF02BC26D8D00908A4D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C266CAEF2BC26D8D00908A4D /* Kingfisher */; };
+		C266CB122BC2B2A000908A4D /* ScreenShotsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266CB112BC2B2A000908A4D /* ScreenShotsCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		C266CADF2BC247CD00908A4D /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		C266CAE12BC24D3D00908A4D /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		C266CAE82BC2500600908A4D /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		C266CB112BC2B2A000908A4D /* ScreenShotsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenShotsCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				C266CACB2BC2306F00908A4D /* SearchViewController.swift */,
 				C266CAE82BC2500600908A4D /* SearchViewModel.swift */,
 				C266CAD02BC231AC00908A4D /* SearchTableViewCell.swift */,
+				C266CB112BC2B2A000908A4D /* ScreenShotsCollectionViewCell.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				C266CAE02BC247CD00908A4D /* API.swift in Sources */,
 				C266CAE92BC2500600908A4D /* SearchViewModel.swift in Sources */,
 				C266CAD32BC231B200908A4D /* BaseTableViewCell.swift in Sources */,
+				C266CB122BC2B2A000908A4D /* ScreenShotsCollectionViewCell.swift in Sources */,
 				C266CACC2BC2306F00908A4D /* SearchViewController.swift in Sources */,
 				C266CAB92BC22F9D00908A4D /* SceneDelegate.swift in Sources */,
 			);
