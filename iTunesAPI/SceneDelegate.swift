@@ -16,7 +16,39 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let scene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(windowScene: scene)
+        
+        let tabBarController = UITabBarController()
+        window?.rootViewController = tabBarController
+        
+        let todayView = UINavigationController(rootViewController: SearchViewController())
+        let gameView = UINavigationController(rootViewController: SearchViewController())
+        let appView = UINavigationController(rootViewController: SearchViewController())
+        let arcadeView = UINavigationController(rootViewController: SearchViewController())
+        let searchView = UINavigationController(rootViewController: SearchViewController())
+        
+        tabBarController.setViewControllers([todayView, gameView, appView, arcadeView, searchView], animated: true)
+        
+        todayView.tabBarItem = UITabBarItem(title: "투데이",
+                                            image: UIImage(systemName: "book"),
+                                            selectedImage: UIImage(systemName: "book.fill"))
+        
+        gameView.tabBarItem = UITabBarItem(title: "게임",
+                                           image: UIImage(systemName: "gamecontroller"),
+                                           selectedImage: UIImage(systemName: "gamecontroller.fill"))
+        
+        appView.tabBarItem = UITabBarItem(title: "앱",
+                                          image: UIImage(systemName: "square.stack"),
+                                          selectedImage: UIImage(systemName: "square.stack.fill"))
+        
+        arcadeView.tabBarItem = UITabBarItem(title: "아케이드",
+                                             image: UIImage(systemName: "star"),
+                                             selectedImage: UIImage(systemName: "star.fill"))
+        
+        searchView.tabBarItem = UITabBarItem(title: "검색",
+                                             image: UIImage(systemName: "magnifyingglass"),
+                                             selectedImage: UIImage(systemName: "magnifyingglass"))
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

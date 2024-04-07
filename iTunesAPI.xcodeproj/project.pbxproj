@@ -13,7 +13,7 @@
 		C266CABE2BC22F9D00908A4D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C266CABD2BC22F9D00908A4D /* Base */; };
 		C266CAC02BC22F9F00908A4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C266CABF2BC22F9F00908A4D /* Assets.xcassets */; };
 		C266CAC32BC22F9F00908A4D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C266CAC22BC22F9F00908A4D /* Base */; };
-		C266CACC2BC2306F00908A4D /* SerachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266CACB2BC2306F00908A4D /* SerachViewController.swift */; };
+		C266CACC2BC2306F00908A4D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266CACB2BC2306F00908A4D /* SearchViewController.swift */; };
 		C266CACF2BC2308600908A4D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266CACE2BC2308600908A4D /* BaseViewController.swift */; };
 		C266CAD12BC231AC00908A4D /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266CAD02BC231AC00908A4D /* SearchTableViewCell.swift */; };
 		C266CAD32BC231B200908A4D /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266CAD22BC231B200908A4D /* BaseTableViewCell.swift */; };
@@ -28,7 +28,7 @@
 		C266CABF2BC22F9F00908A4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C266CAC22BC22F9F00908A4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C266CAC42BC22F9F00908A4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C266CACB2BC2306F00908A4D /* SerachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerachViewController.swift; sourceTree = "<group>"; };
+		C266CACB2BC2306F00908A4D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C266CACE2BC2308600908A4D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C266CAD02BC231AC00908A4D /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		C266CAD22BC231B200908A4D /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 		C266CACA2BC2306200908A4D /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				C266CACB2BC2306F00908A4D /* SerachViewController.swift */,
+				C266CACB2BC2306F00908A4D /* SearchViewController.swift */,
 				C266CAD02BC231AC00908A4D /* SearchTableViewCell.swift */,
 			);
 			path = Search;
@@ -171,7 +171,7 @@
 				C266CAB72BC22F9D00908A4D /* AppDelegate.swift in Sources */,
 				C266CAD12BC231AC00908A4D /* SearchTableViewCell.swift in Sources */,
 				C266CAD32BC231B200908A4D /* BaseTableViewCell.swift in Sources */,
-				C266CACC2BC2306F00908A4D /* SerachViewController.swift in Sources */,
+				C266CACC2BC2306F00908A4D /* SearchViewController.swift in Sources */,
 				C266CAB92BC22F9D00908A4D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
